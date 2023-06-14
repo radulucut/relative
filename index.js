@@ -1,9 +1,10 @@
 /**
- * @param {Date} date
- * @returns {string}
+ * Returns a string representing the time since the given date.
+ * 
+ * @param {Date} date The date to calculate the time since.
+ * @returns {string} A string representing the time since the given date.
  * @example
- * const timeSince = require("t-since");
- * console.log(timeSince(new Date("2023-01-01T00:00:00.000Z")));
+ * timeSince(new Date("2023-01-01T00:00:00.000Z"));
  * //=> 5 months
  */
 function timeSince(date) {
