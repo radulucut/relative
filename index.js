@@ -1,4 +1,3 @@
-
 /**
  * @param {Date} date
  * @returns {string}
