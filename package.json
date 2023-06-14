@@ -1,0 +1,32 @@
+{
+  "name": "t-since",
+  "version": "1.0.0",
+  "description": "Get the difference between a given Date and the current Date in a friendly format: i.e. 1 year, 2 months, 3 days, 4 hours, 5 minutes, 6 seconds",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radulucut/t-since.git"
+  },
+  "keywords": [
+    "timesince",
+    "time",
+    "since",
+    "date"
+  ],
+  "bugs": {
+    "url": "https://github.com/radulucut/t-since/issues"
+  },
+  "homepage": "https://github.com/radulucut/t-since#readme",
+  "author": "Radu Lucut",
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
