@@ -1,6 +1,6 @@
 {
   "name": "t-since",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get the difference between a given Date and the current Date in a friendly format: i.e. 1 year, 2 months, 3 days, 4 hours, 5 minutes, 6 seconds",
   "main": "index.js",
   "files": [

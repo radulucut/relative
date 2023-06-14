@@ -11,5 +11,5 @@ declare module "t-since" {
    */
   function timeSince(date: Date): string;
 
-  export default timeSince;
+  export = timeSince;
 }
