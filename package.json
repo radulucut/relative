@@ -1,6 +1,6 @@
 {
   "name": "t-since",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Format the relative time between the current date and a given date in a human readable format. The output is rounded to the nearest time unit, i.e. 1 year ago, 5 minutes ago, in 3 days, in 6 seconds",
   "main": "index.js",
   "files": [

@@ -23,7 +23,7 @@
  * ```
  */
 function Time(locales, options) {
-    const f = new Intl.RelativeTimeFormat(locales || 'en', options | { style: 'short' });
+    const f = new Intl.RelativeTimeFormat(locales, options);
 
     /**
      *
