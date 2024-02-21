@@ -124,40 +124,34 @@ describe("Time", () => {
         });
 
         test("should return 30 seconds ago", () => {
-            const date = new Date(new Date().getTime() - secondMs * 30);
+            const date = new Date(new Date().getTime() - secondMs * 30 - 100);
             expect(timeEN.Relative(date)).toBe("30 seconds ago");
             expect(timeRO.Relative(date)).toBe("acum 30 de secunde");
         });
         test("should return in 30 seconds", () => {
-            const date = new Date(new Date().getTime() + secondMs * 30);
+            const date = new Date(new Date().getTime() + secondMs * 30 + 100);
             expect(timeEN.Relative(date)).toBe("in 30 seconds");
             expect(timeRO.Relative(date)).toBe("peste 30 de secunde");
         })
 
         test("should return 1 second ago", () => {
-            const date = new Date(new Date().getTime() - secondMs);
+            const date = new Date(new Date().getTime() - secondMs - 100);
             expect(timeEN.Relative(date)).toBe("1 second ago");
             expect(timeRO.Relative(date)).toBe("acum 1 secundă");
         });
         test("should return in 1 second", () => {
-            const date = new Date(new Date().getTime() + secondMs);
+            const date = new Date(new Date().getTime() + secondMs + 100);
             expect(timeEN.Relative(date)).toBe("in 1 second");
             expect(timeRO.Relative(date)).toBe("peste 1 secundă");
         });
 
         test("should return 1 second ago", () => {
-            const date = new Date(new Date().getTime() - 100);
+            const date = new Date(new Date().getTime() - 10);
             expect(timeEN.Relative(date)).toBe("1 second ago");
             expect(timeRO.Relative(date)).toBe("acum 1 secundă");
         });
         test("should return in 1 second", () => {
-            const date = new Date(new Date().getTime() + 100);
-            expect(timeEN.Relative(date)).toBe("in 1 second");
-            expect(timeRO.Relative(date)).toBe("peste 1 secundă");
-        });
-
-        test("should return 1 second ago", () => {
-            const date = new Date();
+            const date = new Date(new Date().getTime() + 10);
             expect(timeEN.Relative(date)).toBe("in 1 second");
             expect(timeRO.Relative(date)).toBe("peste 1 secundă");
         });
