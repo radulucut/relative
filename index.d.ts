@@ -1,4 +1,4 @@
-declare module "t-since" {
+declare module "@radulucut/relative" {
   /**
    * Format the relative time between the current date and the date passed as a parameter.
    *
@@ -14,7 +14,7 @@ declare module "t-since" {
    *
    * @example
    * ```
-   * import Time from "t-since";
+   * import Time from "@radulucut/relative";
    *
    * const time = Time();
    * time.Relative(new Date("2024-01-01T00:00:00.000Z")); // "2 months ago"
@@ -34,7 +34,7 @@ declare module "t-since" {
      *
      * @example
      * ```
-     * import Time from "t-since";
+     * import Time from "@radulucut/relative";
      *
      * const time = Time();
      * time.Relative(new Date("2024-01-01T00:00:00.000Z")); // "2 months ago"

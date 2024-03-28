@@ -1,6 +1,6 @@
 {
-  "name": "t-since",
-  "version": "2.0.1",
+  "name": "@radulucut/relative",
+  "version": "2.0.2",
   "description": "Format the relative time between the current date and a given date in a human readable format. The output is rounded to the nearest time unit, i.e. 1 year ago, 5 minutes ago, in 3 days, in 6 seconds",
   "main": "index.js",
   "files": [
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/radulucut/t-since.git"
+    "url": "git+https://github.com/radulucut/relative.git"
   },
   "keywords": [
     "relative",
@@ -23,9 +23,9 @@
     "in"
   ],
   "bugs": {
-    "url": "https://github.com/radulucut/t-since/issues"
+    "url": "https://github.com/radulucut/relative/issues"
   },
-  "homepage": "https://github.com/radulucut/t-since#readme",
+  "homepage": "https://github.com/radulucut/relative#readme",
   "author": "Radu Lucuț",
   "license": "MIT",
   "types": "./index.d.ts",

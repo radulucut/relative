@@ -13,7 +13,7 @@
  *
  * @example
  * ```
- * import Time from "t-since";
+ * import Time from "@radulucut/relative";
  *
  * const time = Time();
  * time.Relative(new Date("2024-01-01T00:00:00.000Z")); // "2 months ago"
@@ -33,7 +33,7 @@ function Time(locales, options) {
      *
      * @example
      * ```
-     * import Time from "t-since";
+     * import Time from "@radulucut/relative";
      *
      * const time = Time();
      * time.Relative(new Date("2024-01-01T00:00:00.000Z")); // "2 months ago"
