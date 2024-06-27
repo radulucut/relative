@@ -1,6 +1,6 @@
 {
   "name": "@radulucut/relative",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Format the relative time between the current date and a given date in a human readable format. The output is rounded to the nearest time unit, i.e. 1 year ago, 5 minutes ago, in 3 days, in 6 seconds",
   "main": "index.js",
   "files": [
@@ -8,7 +8,7 @@
     "index.d.ts"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "node --test"
   },
   "repository": {
     "type": "git",
@@ -28,8 +28,5 @@
   "homepage": "https://github.com/radulucut/relative#readme",
   "author": "Radu Lucuț",
   "license": "MIT",
-  "types": "./index.d.ts",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  }
+  "types": "./index.d.ts"
 }
