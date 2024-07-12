@@ -47,32 +47,27 @@ function Time(locales, options) {
         const sign = diff > 0 ? -1 : 1;
         const seconds = Math.abs(diff);
 
-        let interval = seconds / 31536000;
-        if (interval > 1) {
-            return f.format(Math.floor(interval) * sign, 'year');
+        if (seconds < 60) {
+            return f.format(Math.max(Math.floor(seconds), 1) * sign, 'second');
         }
 
-        interval = seconds / 2592000;
-        if (interval > 1) {
-            return f.format(Math.floor(interval) * sign, 'month');
+        if (seconds < 3600) {
+            return f.format(Math.floor(seconds / 60) * sign, 'minute');
         }
 
-        interval = seconds / 86400;
-        if (interval > 1) {
-            return f.format(Math.floor(interval) * sign, 'day');
+        if (seconds < 86400) {
+            return f.format(Math.floor(seconds / 3600) * sign, 'hour');
         }
 
-        interval = seconds / 3600;
-        if (interval > 1) {
-            return f.format(Math.floor(interval) * sign, 'hour');
+        if (seconds < 2592000) {
+            return f.format(Math.floor(seconds / 86400) * sign, 'day');
         }
 
-        interval = seconds / 60;
-        if (interval > 1) {
-            return f.format(Math.floor(interval) * sign, 'minute');
+        if (seconds < 31536000) {
+            return f.format(Math.floor(seconds / 2592000) * sign, 'month');
         }
 
-        return f.format(Math.max(Math.floor(seconds), 1) * sign, 'second');
+        return f.format(Math.floor(seconds / 31536000) * sign, 'year');
     }
 
     return { Relative };
