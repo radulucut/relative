@@ -73,4 +73,6 @@ function Time(locales, options) {
     return { Relative };
 }
 
-module.exports = Time;
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = Time;
+}
